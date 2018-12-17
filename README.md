@@ -33,8 +33,9 @@ git pull
 ### 設定不需要放在git上的檔案
 ``` sh
 vim .gitignore
-/filename
-#但只要加上git add -f filename即可加入git
+/filename#只會限制未推上git的檔案
+
+git update-index --assume-unchanged filename#如果要限制已推上的檔案 直接打指令
 ```
 ### 查看檔案中某行是誰更變的
 ``` sh
