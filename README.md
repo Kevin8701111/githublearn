@@ -7,7 +7,7 @@
 * 設定不需要放在git上的檔案
 * 查看檔案中某行是誰更變的
 * 救回被刪除的檔案
-* splash
+* 分支
 
 ### 安裝
 ``` sh 
@@ -26,6 +26,7 @@ git config --global alias.自定義指令 '指令'
 ``` sh
 git status
 git add filename
+#git add -p filename 選擇e 可編輯上傳至暫存區的內容
 git commit -m 'notes'
 git push
 git pull
@@ -48,5 +49,18 @@ git blame filename
 ``` sh
 git checkout filename
 #可代參數例如：git checkout HEAD~2 filename 可以理解成 git checkout filename 並git add filename & git commit
+git reset HEAD~2
+#返回到前2次的版本,查看版本git log --oneline
+git reset 版本號碼 --mixed/soft/hard
+#查看返回紀錄 git reflog or git log -g
 ```
-### 
+### 分支
+``` sh
+git branch
+#列出分支
+git checkout -b cat
+#建立並前往分支
+git merge cat
+#合併 cat分支到目前的分支
+
+```
