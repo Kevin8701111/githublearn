@@ -39,6 +39,8 @@ vim .gitignore
 
 git update-index --assume-unchanged filename
 #如果要限制已推上的檔案 直接打指令
+git ls-files -v
+#顯示限制名單
 ```
 ### 查看檔案中某行是誰更變的
 ``` sh
