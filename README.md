@@ -39,6 +39,8 @@ vim .gitignore
 
 git update-index --assume-unchanged filename
 #如果要限制已推上的檔案 直接打指令
+git update-index --no-assume-unchanged filename
+#解除限制
 git ls-files -v
 #顯示限制名單
 ```
