@@ -25,6 +25,8 @@ git config --global alias.自定義指令 '指令'
 ### 目前用到的指令
 ``` sh
 git status
+git clone 'url.git'
+#export GIT_SSL_NO_VERIFY=1  顯示CRLfile: none 就添加環境變數
 git add filename
 #git add -p filename 選擇e 可編輯上傳至暫存區的內容
 git commit -m 'notes'
