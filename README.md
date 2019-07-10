@@ -25,6 +25,8 @@ git config --global alias.自定義指令 '指令'
 ### 目前用到的指令
 ``` sh
 git status
+git clone 'url.git'
+#export GIT_SSL_NO_VERIFY=1  顯示CRLfile: none 就添加環境變數
 git add filename
 #git add -p filename 選擇e 可編輯上傳至暫存區的內容
 git commit -m 'notes'
@@ -39,6 +41,10 @@ vim .gitignore
 
 git update-index --assume-unchanged filename
 #如果要限制已推上的檔案 直接打指令
+git update-index --no-assume-unchanged filename
+#解除限制
+git ls-files -v
+#顯示限制名單
 ```
 ### 查看檔案中某行是誰更變的
 ``` sh
