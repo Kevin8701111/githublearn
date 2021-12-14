@@ -27,8 +27,8 @@ git config --global alias.自定義指令 '指令'
 git status
 git clone 'url.git'
 #export GIT_SSL_NO_VERIFY=1  顯示CRLfile: none 就添加環境變數
-git add filename
-#git add -p filename 選擇e 可編輯上傳至暫存區的內容
+git add filename or git add .
+--git add -p filename 選擇e 可編輯上傳至暫存區的內容
 git commit -m 'notes'
 git push
 git pull
@@ -70,3 +70,14 @@ git merge cat
 #合併 cat分支到目前的分支
 
 ```
+
+### 使用token push
+![](https://i.imgur.com/agpJP0H.png)
+![](https://i.imgur.com/gz5XY0u.png)
+![](https://i.imgur.com/59FMgY7.png)
+![](https://i.imgur.com/Wyv9q7I.png)
+![](https://i.imgur.com/HmAfaJ0.png)
+![](https://i.imgur.com/ASfgyUK.png)
+![](https://i.imgur.com/s4Iltnl.png)
+![](https://i.imgur.com/3a5xPSp.png)
+
